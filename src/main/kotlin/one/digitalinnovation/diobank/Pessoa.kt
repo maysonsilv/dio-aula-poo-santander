@@ -5,13 +5,18 @@ class Pessoa {
     var cpf: String = "321.435.355-02"
     private set
 
+    constructor()
+
+    fun pessoaInfo() = "$nome e $cpf"
+    
+
 }
 
 fun main(){
 
     var meyson = Pessoa()
 
-    println(meyson.nome)
-    println(meyson.cpf)
+    println(meyson.pessoaInfo())
+
 
 }
